@@ -31,7 +31,7 @@ module JsonRpc
     # Set to `nil` to disable the flood-protection.
     property flood_messages : Int32? = 6000
 
-    @flood_time_end : Time = Time.now
+    @flood_time_end : Time = Time.local
     @flood_count : Int32 = 0
 
     # Total count of messages sent.
